@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <!-- Meus estilos -->
+    <link type="text/css" rel="stylesheet" href="css/estilo.css" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Font-awesome - icones -->
+    <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvcrossorigin="anonymous"
+    />
+    <!-- fonte do google -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|PT+Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Chettan"
+      rel="stylesheet"
+    />
+    <!-- bootstrao 0-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Materialize -->
+    <link rel="stylesheet" href="css/materialize.css" />
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+  </head>
+
+  <body>
+    <nav class="black">
+      <div class="nav-wrapper">
+        <a href="index.html"><i class="fas fa-home fa-3x"></i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a data-toggle="modal" data-target="#myModal"
+              ><i class="fas fa-user"> Minha conta</i></a
+            >
+          </li>
+          <li>
+            <a href="carrinho.html" target="_blank"
+              ><i class="fas fa-shopping-cart"> Meus Pedidos</i></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="./Images/img33.png" class="hoverable materialboxed" />
+          <div class="caption center-align"></div>
+        </li>
+        <li>
+          <img src="./Images/img22.jpg" class="hoverable materialboxed" />
+          <div class="caption center-align"></div>
+        </li>
+        <li>
+          <img src="./Images/img11.jpg" class="hoverable materialboxed" />
+          <div class="caption center-align"></div>
+        </li>
+        <li>
+          <img src="./Images/img44.jpg" class="hoverable materialboxed" />
+          <div class="caption left-align"></div>
+        </li>
+      </ul>
+    </div>
+
+    <br /><br /><br /><br />
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4 image">
+          <a href="produto.html" target="_blank"
+            ><img
+              src="./Images/img1.png"
+              class="aligncenter img-fluid hoverable materialboxed"
+          /></a>
+        </div>
+
+        <div class="col-md-4 image">
+          <a href="produto.html" target="_blank"
+            ><img
+              src="./Images/img2.png"
+              class="aligncenter img-fluid hoverable materialboxed"
+          /></a>
+        </div>
+
+        <div class="col-md-4 image">
+          <a href="produto.html" target="_blank"
+            ><img
+              src="./Images/img3.png"
+              class="aligncenter img-fluid hoverable materialboxed"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <img
+      src="./Images/img principal.jfif"
+      width="1250"
+      class="aligncenter img-fluid hoverable materialboxed imgberma"
+    />
+
+    <br /><br />
+
+    <hr />
+
+    <div class="container">
+      <div class="row justify-content-md-left">
+        <div class="col-md-6">
+          <b class="fconosco">Fale Conosco</b><br />
+
+          <br /><br />
+
+          <form
+            action="https://formsubmit.co/304070325e9b0f387918ba852bc386ee"
+            method="POST"
+          >
+            <fieldset>
+              <label class="labelnegrito">Nome</label>
+              <input
+                type="text"
+                id="nomeesobrenome"
+                name="name"
+                required
+                placeholder="nome"
+              />
+              <br />
+
+              <label class="labelnegrito">E-mail</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                required
+                placeholder="email@dominio.com.br"
+              />
+              <br />
+
+              <label class="labelnegrito">Telefone</label>
+              <input
+                type="text"
+                id="telefone"
+                name="tell"
+                required
+                placeholder="(xx) xxxxx-xxxx"
+              />
+              <br />
+
+              <label class="labelnegrito">Coméntario</label>
+              <textarea
+                placeholder="Mensagem"
+                cols="50"
+                rows="50"
+                maxlength="1000"
+                id="mensagem"
+                name="text"
+                required
+              ></textarea
+              ><br />
+              <br />
+
+              <button class="btn btn-danger" onclick="enviar()">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.3620776093107!2d-46.59835466403883!3d-23.55233712176325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5934268f4b49%3A0x40797b77e036a886!2sRua+Taquari%2C+546+-+Mooca%2C+S%C3%A3o+Paulo+-+SP%2C+03166-000!5e0!3m2!1spt-BR!2sbr!4v1558846241111!5m2!1spt-BR!2sbr"
+            class="gmaps"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+    <hr />
+
+    <!-- Inicio Modal -->
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title text-center" id="myModalLabel">Login</h4>
+          </div>
+
+          <div class="modal-body">
+            <p>E-mail</p>
+            <input type="text" id="mailID" />
+
+            <p>Senha</p>
+            <input type="text" id="senhaID" />
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              onclick="logar()"
+              data-dismiss="modal"
+            >
+              Login
+            </button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fim Modal -->
+  </body>
+
+  <!-- js -->
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    document.addEventListener("contextmenu", (e) => e.preventDefault());
+    $(document).ready(function () {
+      $(".slider").slider({
+        interval: 6000,
+        height: 450,
+      });
+    });
+  </script>
+
+  <script>
+    function logar() {
+      alert("Login Efetuado !");
+    }
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".modal").on("hidden.bs.modal", function () {
+        console.log("fechar modal");
+        $(this).find("input:text").val("");
+      });
+    });
+  </script>
+
+  <script>
+    function enviar() {
+      alert("Enviado com Susesso !!");
+    }
+  </script>
+
+  <script>
+    var dataHora, xHoras, xDias, dia, mes, ano, saudacao;
+    dataHora = new Date();
+    xHoras = dataHora.getHours();
+
+    if (xHoras >= 0 && xHoras < 12) {
+      saudacao = "Bom dia";
+    }
+    if (xHoras >= 12 && xHoras < 18) {
+      saudacao = "Bom tarde!!";
+    }
+    if (xHoras >= 18 && xHoras <= 23) {
+      saudacao = "Bom noite!!!";
+    }
+
+    xDias = dataHora.getDay();
+
+    diaSem = new Array(7);
+
+    diaSem[0] = "Domingo";
+    diaSem[1] = "Segunda-feira";
+    diaSem[2] = "Terça-feira";
+    diaSem[3] = "Quarta-feira";
+    diaSem[4] = "Quinta-feira";
+    diaSem[5] = "Sexta-feira";
+    diaSem[6] = "Sabado";
+
+    dia = dataHora.getDate();
+    mes = dataHora.getMonth();
+
+    mesAno = new Array(12);
+
+    mesAno[0] = "Janeiro";
+    mesAno[1] = "Fevereiro";
+    mesAno[2] = "Março";
+    mesAno[3] = "Abril";
+    mesAno[4] = "Maio";
+    mesAno[5] = "Junho";
+    mesAno[6] = "Julho";
+    mesAno[7] = "Agosto";
+    mesAno[8] = "setembro";
+    mesAno[9] = "Outubro";
+    mesAno[10] = "Novembro";
+    mesAno[11] = "Dezembro";
+
+    ano = dataHora.getFullYear();
+
+    document.write(
+      saudacao +
+        " " +
+        diaSem[xDias] +
+        ", " +
+        dia +
+        " " +
+        mesAno[mes] +
+        " de " +
+        ano
+    );
+  </script>
+</html>
